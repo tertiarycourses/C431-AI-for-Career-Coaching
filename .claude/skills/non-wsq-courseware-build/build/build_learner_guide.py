@@ -162,7 +162,7 @@ if _WRAP:
     h1(_WRAP.get("title","Wrap-Up"))
     if _WRAP.get("intro"): p(_WRAP["intro"])
     for sec in _WRAP.get("sections",[]):
-        h3(sec.get("title","")); 
+        h3(sec.get("title",""));
         if sec.get("text"): p(sec["text"])
         if sec.get("bullets"): bullets(sec["bullets"])
     rule()
